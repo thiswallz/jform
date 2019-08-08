@@ -1,0 +1,25 @@
+$badass: white;
+body {
+  background-color: $badass;
+  .container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding: 10px;
+    .directory-search {
+      height: 700px;
+      overflow: auto;
+    }
+    #tree-container {
+      height: 600px;
+    }
+    .fancytree-container {
+      border: 0px dotted gray;
+      outline: none;
+    }
+  }
+}
+.search-bar {
+  input {
+    width: 400px;
+  }
+}

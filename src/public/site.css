@@ -1,0 +1,21 @@
+body {
+  background-color: white; }
+
+body .container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  padding: 10px; }
+
+body .container .directory-search {
+  height: 700px;
+  overflow: auto; }
+
+body .container #tree-container {
+  height: 600px; }
+
+body .container .fancytree-container {
+  border: 0px dotted gray;
+  outline: none; }
+
+.search-bar input {
+  width: 400px; }
