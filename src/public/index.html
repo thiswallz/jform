@@ -1,26 +1,23 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>My Wish UI</title>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <link rel="stylesheet" href="site.css">
-
-        <script src="//code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
-  
-        <link href="//cdn.jsdelivr.net/jquery.fancytree/2/skin-win8/ui.fancytree.min.css" type="text/css" rel="stylesheet" />
-        <script src="//cdn.jsdelivr.net/jquery.fancytree/2/jquery.fancytree-all.min.js" type="text/javascript"></script>
-        <link rel="stylesheet"
-                href="//cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.2.3/jquery.contextMenu.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.2.3/jquery.contextMenu.min.js">
-        </script>
-        <script src="http://wwwendt.de/tech/fancytree/3rd-party/extensions/contextmenu/js/jquery.fancytree.contextMenu.js"></script>
-
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Wish UI</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="site.css">
+    <script src="//code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="//cdn.jsdelivr.net/jquery.fancytree/2/skin-win8/ui.fancytree.min.css" type="text/css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/jquery.fancytree/2/jquery.fancytree-all.min.js" type="text/javascript"></script>
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.2.3/jquery.contextMenu.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.2.3/jquery.contextMenu.min.js">
+    </script>
+    <script src="http://wwwendt.de/tech/fancytree/3rd-party/extensions/contextmenu/js/jquery.fancytree.contextMenu.js"></script>
+  </head>
+  <body>
     <div id="app">
       <div class="search-bar">
         <input placeholder="C:/folder/ang/" v-model="rootFolder" />
@@ -34,12 +31,10 @@
         <div class="preview-options">
           {{folderSelected}}
           <hr/>
-
+          <button v-on:click="generate()">Generate</button>
         </div>
       </div>
     </div>
     <script src="vue.main.js"></script>
-    
-	</body>
-
+  </body>
 </html>
